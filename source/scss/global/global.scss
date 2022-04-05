@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  // display: flex;
+}
+
+.reset-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  min-width: 320px;
+  position: relative;
+  font: normal 14px "SuisseIntl", Arial, serif;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  &.js-no-scroll {
+    overflow: hidden;
+  }
+}
+
+.container {
+  max-width: $desktop;
+  width: 100%;
+  padding: 0 $desktop-gap;
+  margin: 0 auto;
+
+  @include mobile {
+    padding: 0 $mobile-gap;
+  }
+}
+
+.section-title {
+  @include font(32px, 38px, 500, $text-main);
+  margin: 0;
+}
