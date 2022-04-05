@@ -3,10 +3,16 @@
   min-height: 60px;
   display: flex;
   align-items: center;
+  padding: 0 10px;
   justify-content: center;
   border: 2px solid $bg;
   border-radius: 4px;
   transition: border-color 0.2s;
+
+  img {
+    max-width: 80px;
+    max-height: 24px;
+  }
 
   &:hover {
     cursor: pointer;
