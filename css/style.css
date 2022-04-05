@@ -1131,6 +1131,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1139,6 +1140,9 @@ body {
   -webkit-transition: border-color 0.2s;
   -o-transition: border-color 0.2s;
   transition: border-color 0.2s; }
+  .brand-chip img {
+    max-width: 80px;
+    max-height: 24px; }
   .brand-chip:hover {
     cursor: pointer;
     border-color: #e6e6ef; }
